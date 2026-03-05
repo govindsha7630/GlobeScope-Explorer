@@ -3,7 +3,6 @@
 <p align="center">
   <img src="./src/Assets/screenshots/home.png" width="800" style="border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.2);"/>
 </p>
-
 <p align="center">
 A modern <b>Country Explorer Web App</b> built with <b>React</b> and <b>Vite</b>.  
 Search countries and explore detailed information like population, region, capital, and flags.
