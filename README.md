@@ -1,87 +1,154 @@
-# Welcome to React Router!
+# 🌍 Globe Scope Explorer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern **country explorer web app** built with React.
+Users can search for countries and view detailed information such as population, region, capital, and flags.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+This project demonstrates **dynamic routing, API data fetching, and responsive UI design**.
 
-## Features
+---
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 🚀 Features
 
-## Getting Started
+* 🔍 Search countries by name
+* 🌎 View detailed information about each country
+* 🧭 Dynamic routing for country pages
+* ⚡ Fast performance using Vite
+* 🎨 Modern and responsive UI
+* 📡 Real-time data from REST Countries API
 
-### Installation
+---
 
-Install the dependencies:
+## 🛠 Tech Stack
+
+This project is built using modern frontend technologies:
+
+* React
+* React Router
+* Vite
+* JavaScript
+* CSS / Tailwind (if used)
+
+---
+
+## 📦 Installation
+
+Clone the repository and install dependencies.
 
 ```bash
+git clone https://github.com/your-username/globe-scope-explorer.git
+cd globe-scope-explorer
 npm install
 ```
 
-### Development
+---
 
-Start the development server with HMR:
+## ▶️ Run the Project
+
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+The app will run on:
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+http://localhost:5173
 ```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+## 🌐 API Used
+
+This project uses the **REST Countries API** to fetch country data.
+
+Example endpoint:
+
+```
+     https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}?fullText=true&fields=name,capital,population,region,subregion,flags
+    
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src
+ ├── components
+ │   ├── Navbar.tsx
+ │
+ ├── routes
+ │   ├── home.tsx
+ │   ├── country.tsx
+ │   ├── countries.tsx
+ │   ├── about.tsx
+ │
+ ├── root.tsx
+ ├── routes.tsx
+```
+
+---
+
+## 🔗 Routing Example
+
+Dynamic route for country details:
+
+```
+/country/:countryName
+```
+
+Example:
+
+```
+/country/india
+```
+
+---
+
+## 🎯 What I Learned
+
+While building this project I practiced:
+
+* React component architecture
+* Dynamic routing with React Router
+* Fetching and handling API data
+* Managing loading states
+* Creating responsive layouts
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots of your project here)
+
+---
+
+## 📌 Future Improvements
+
+* Dark / Light mode
+* Region filtering
+* Favorite countries
+* Pagination or infinite scroll
+* Improved animations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+If you want to improve this project, feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Created by **Govind Shah**
+
+If you like this project, consider giving it a ⭐ on GitHub!
