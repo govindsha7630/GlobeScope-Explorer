@@ -1,7 +1,7 @@
 # 🌍 Globe Scope Explorer
 
 <p align="center">
-  <img src="./screenshots/full_home_page.png" width="900"/>
+  <img src="./src/Assets/screenshots/home.png" width="800" style="border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.2);"/>
 </p>
 
 <p align="center">
