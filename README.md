@@ -1,42 +1,53 @@
 # 🌍 Globe Scope Explorer
 
-A modern **country explorer web app** built with React.
-Users can search for countries and view detailed information such as population, region, capital, and flags.
+<p align="center">
+  <img src="./screenshots/full_home_page.png" width="900"/>
+</p>
 
-This project demonstrates **dynamic routing, API data fetching, and responsive UI design**.
+<p align="center">
+A modern <b>Country Explorer Web App</b> built with <b>React</b> and <b>Vite</b>.  
+Search countries and explore detailed information like population, region, capital, and flags.
+</p>
 
 ---
 
 ## 🚀 Features
 
+✨ Modern and fast country explorer
+
 * 🔍 Search countries by name
-* 🌎 View detailed information about each country
+* 🌎 View detailed information for each country
 * 🧭 Dynamic routing for country pages
-* ⚡ Fast performance using Vite
-* 🎨 Modern and responsive UI
+* ⚡ Fast development with Vite
+* 🎨 Clean and responsive UI
 * 📡 Real-time data from REST Countries API
 
 ---
 
 ## 🛠 Tech Stack
 
-This project is built using modern frontend technologies:
-
-* React
-* React Router
-* Vite
-* JavaScript
-* CSS / Tailwind (if used)
+| Technology   | Purpose         |
+| ------------ | --------------- |
+| React        | UI Library      |
+| React Router | Routing         |
+| Vite         | Fast build tool |
+| TypeScript   | Type safety     |
+| CSS          | Styling         |
 
 ---
 
 ## 📦 Installation
 
-Clone the repository and install dependencies.
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/globe-scope-explorer.git
-cd globe-scope-explorer
+git clone https://github.com/govindsha7630/GlobeScope-Explorer.git
+cd GlobeScope-Explorer
+```
+
+Install dependencies:
+
+```bash
 npm install
 ```
 
@@ -50,7 +61,7 @@ Start the development server:
 npm run dev
 ```
 
-The app will run on:
+Open in browser:
 
 ```
 http://localhost:5173
@@ -60,14 +71,47 @@ http://localhost:5173
 
 ## 🌐 API Used
 
-This project uses the **REST Countries API** to fetch country data.
+This project fetches data from **REST Countries API**.
 
-Example endpoint:
+Example request:
 
 ```
-     https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}?fullText=true&fields=name,capital,population,region,subregion,flags
-    
+https://restcountries.com/v3.1/name/${encodeURIComponent(countryName)}?fullText=true&fields=name,capital,population,region,subregion,flags
 ```
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+<p align="center">
+  <img src="./src/Assets/screenshots/home.png" width="800" style="border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.2);"/>
+</p>
+
+---
+
+## 🌎 Countries Page
+
+<p align="center">
+  <img src="./src/Assets/screenshots/countries.png" width="800" style="border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.2);"/>
+</p>
+
+---
+
+## ℹ️ About Page
+
+<p align="center">
+  <img src="./src/Assets/screenshots/about.png" width="800" style="border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.2);"/>
+</p>
+
+---
+
+## 🖥 Full Page Preview
+
+<p align="center">
+  <img src="./src/Assets/screenshots/full_home_page.png" width="900" style="border-radius:12px; box-shadow:0 12px 30px rgba(0,0,0,0.25);"/>
+</p>
 
 ---
 
@@ -76,29 +120,29 @@ Example endpoint:
 ```
 src
  ├── components
- │   ├── Navbar.tsx
+ │   └── Navbar.tsx
  │
  ├── routes
  │   ├── home.tsx
- │   ├── country.tsx
  │   ├── countries.tsx
- │   ├── about.tsx
+ │   ├── country.tsx
+ │   └── about.tsx
  │
  ├── root.tsx
- ├── routes.tsx
+ └── routes.tsx
 ```
 
 ---
 
 ## 🔗 Routing Example
 
-Dynamic route for country details:
+Dynamic routing example:
 
 ```
 /country/:countryName
 ```
 
-Example:
+Example URL:
 
 ```
 /country/india
@@ -110,45 +154,39 @@ Example:
 
 While building this project I practiced:
 
-* React component architecture
-* Dynamic routing with React Router
-* Fetching and handling API data
-* Managing loading states
-* Creating responsive layouts
-
----
-
-## 📸 Screenshots
-
-(Add screenshots of your project here)
+* Component-based architecture
+* Dynamic routing
+* Fetching API data
+* Handling loading states
+* Building responsive UI layouts
 
 ---
 
 ## 📌 Future Improvements
 
-* Dark / Light mode
-* Region filtering
-* Favorite countries
-* Pagination or infinite scroll
-* Improved animations
+Planned features:
+
+* 🌙 Dark / Light mode
+* 🌍 Region filtering
+* ⭐ Favorite countries
+* ⚡ Better animations
+* 📱 Improved mobile UI
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome.
-If you want to improve this project, feel free to fork the repository and submit a pull request.
+Contributions are welcome!
 
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
 ## 👨‍💻 Author
 
-Created by **Govind Shah**
+**Govind Shah**
 
 If you like this project, consider giving it a ⭐ on GitHub!
