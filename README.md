@@ -1,3 +1,11 @@
+## 🌐 Live Demo
+
+🔗 https://globescope-explorer.netlify.app/
+
+---
+
+
+
 # 🌍 Globe Scope Explorer
 
 <p align="center">
